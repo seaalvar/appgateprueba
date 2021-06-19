@@ -6,5 +6,6 @@ Feature: Lista de usuarios
       |job|TAE|
     Then valida que el codigo de status sea 201
     And que el contenido de la llave "result" sea "16"
+    And que el contenido de la llave "error" sea null
 
-
+    
