@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('test'){
             steps{
-                bat 'clean test --scan --info'
+                bat 'gradle clean test --scan --info'
             }
         }
     }
