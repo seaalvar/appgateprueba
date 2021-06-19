@@ -3,7 +3,9 @@ pipeline{
     stages{
         stage('test'){
             steps{
-                echo 'clean test --scan --info'
+                withGradle{
+                    sh 'clean test --scan --info'
+                }
             }
         }
     }
