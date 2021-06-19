@@ -3,8 +3,8 @@ pipeline{
     stages{
         stage('test'){
             steps{
-                withGradle(gradle : 'Gradle6.3'){
-                    sh 'clean test --scan --info'
+                withGradle(){
+                    sh './gradlew clean test --scan --info'
                 }
             }
         }
