@@ -1,11 +1,21 @@
 pipeline{
     agent any
     stages{
-        stage('test'){
+        stage('Build'){
+            steps{
+
+            }
+        }
+        stage('Test'){
             steps{
                 withGradle(){
                     bat 'C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/tools/hudson.plugins.gradle.GradleInstallation/Gradle6.3/bin/gradle clean test --scan --info'
                 }
+            }
+        }
+        stage('Deploy'){
+            steps{
+
             }
         }
     }
