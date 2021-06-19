@@ -1,6 +1,6 @@
-Feature: Calculadora Rest
+Feature: Lista de usuarios
 
-  Scenario: Operacion unica exitosa
+  Scenario: Listar Usuarios
     When David envia la siguiente operacion al servicio "https://reqres.in/api/users"
       |names|Sergio|
       |job|TAE|
