@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Download code'){
                 steps{
-                    git 'https://github.com/seaalvar/appgateprueba.git'
+                    git 'https://github.com/seaalvar/appgateprueba'
                 }
             }
         stage('Run test'){
