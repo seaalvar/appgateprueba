@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('test'){
             steps{
-                sh 'clean test --scan --info'
+                bat 'clean test --scan --info'
             }
         }
     }
