@@ -4,7 +4,7 @@ pipeline{
         stage('test'){
             steps{
                 withGradle(){
-                    sh './gradlew clean test --scan --info'
+                    bat './gradlew clean test --scan --info'
                 }
             }
         }
