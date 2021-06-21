@@ -9,6 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features/UpdateUser.feature",
+        tags = "@tag",
         glue = "in.reqres.usersadmin.testing.stepdefinitions",
         snippets = SnippetType.CAMELCASE)
 public class UpdateUserRunner {

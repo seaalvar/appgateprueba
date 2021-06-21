@@ -6,7 +6,7 @@ Feature: Prueba Codificacion
 
     Examples:
       | idEmpleado | nombre   | meses | salario |
-      | 12258      | alejandro| 10    | 7000000 |
+      | 12258      | Simon    | 3     | 6000000 |
 
   @consulta
   Scenario Outline: Consulta empleados
@@ -14,4 +14,4 @@ Feature: Prueba Codificacion
 
     Examples:
       | meses | salario |
-      | 11    | 5000000 |
+      | 6     | 5000000 |

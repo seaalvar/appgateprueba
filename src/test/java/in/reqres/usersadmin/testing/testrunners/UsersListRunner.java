@@ -9,6 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features/UsersList.feature",
+        tags = "@tag",
         glue = "in.reqres.usersadmin.testing.stepdefinitions",
         snippets = SnippetType.CAMELCASE)
 public class UsersListRunner {
