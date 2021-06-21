@@ -31,7 +31,7 @@ Feature: Lista de usuarios
       | total       | 12    |
       | total_pages | 2     |
 
-  @tag
+
   Scenario Outline: Validacion informacion
     When se envia el numero de pagina "1" a consultar al servicio "https://reqres.in/api/users?page="
     Then se valida que la informacion del registro "2" sea "<key>" "<value>"
