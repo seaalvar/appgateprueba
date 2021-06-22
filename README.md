@@ -28,9 +28,11 @@ Lo normal es probar distintos escenarios para comprobar una determinada funciona
 Se utiliza cucumber como herramienta para automatizar las pruebas en BDD. Cucumber nos va a permitir ejecutar descripciones funcionales en texto plano como pruebas de software automatizadas. Totalmente compatible con el lenguaje Gherkin.
 
 ### Serenity BDD
+---
 Serenity es una librería de código abierto que ayuda a escribir pruebas de aceptación automatizadas de mayor calidad y de manera más eficiente.
 
 ### Rest-Assured
+---
 Rest-Assured es un Java DSL (Domain Specific Language) construido sobre la capa HTTP Builder que permite simplificar la construcción de test sobre una API REST. Ofrece una serie de características bastante útiles como sintaxis DSL, validación Xpath, usar JsonPath, registrar parsers para MIME-Types, file upload, verificar cabeceras HTTP o cookies.
 
 ### Gestor de dependencias
@@ -51,19 +53,23 @@ Se utiliza el IDE de IntelliJ para el desarrollo de la automatización. IntelliJ
 Proporciona herramientas para la gestión de espacios de trabajo, escribir, desplegar, ejecutar y depurar aplicaciones.
 
 ### Configuración entorno de trabajo con gradle
+---
 Se debe de descargar gradle y crear una variable de entorno GRADLE_HOME con valor C:\gradle-7.1 (Ruta donde se almacenó el gradle) y en el path se debe de añadir %GRADLE_HOME%\bin
 
 ### Ejecución de las pruebas
+---
 Para la ejecución del proyecto luego de descargado se debe de abrir una línea de comando en la raíz de dicho proyecto y ejecutar el siguiente comando: gradle clean test aggregate
 clean: se encarga de limpiar la carpeta donde se alojan ejecuciones anteriores
 test: se encarga de ejecutar las pruebas
 aggregate: se encarga de crear el reporte luego de finalizada la ejecución
 
 ### Visualización reporte
+---
 Luego de finalizada la ejecución del proyecto se va a la raiz de proyecto y se abre el siguiente archivo "\target\site\serenity\index.html" 
 
 ### CI/CD
-El proyecto se encuentra alojando en un repositorio Github "https://github.com/seaalvar/appgateprueba"
-Se creó un servidor Jenkins (local) en donde se creó una tarea llamada appgateprueba en la que se puede ejecutar el proyecto de forma automática. 
-También se creó un pipeline el cual se conecta al archivo Jenkinsfile del proyecto en donde se administra el entorno de integración continua
-Se configuró el servidor jenkins para que se ejecute automáticamente una vez se realice cualquier cambio dentro del repositorio de código.
+---
++ El proyecto se encuentra alojando en un repositorio Github "https://github.com/seaalvar/appgateprueba"
++ Se creó un servidor Jenkins (local) en donde se creó una tarea llamada appgateprueba en la que se puede ejecutar el proyecto de forma automática.
++ También se creó un pipeline el cual se conecta al archivo Jenkinsfile del proyecto en donde se administra el entorno de integración continua
++ Se configuró el servidor jenkins para que se ejecute automáticamente una vez se realice cualquier cambio dentro del repositorio de código.
