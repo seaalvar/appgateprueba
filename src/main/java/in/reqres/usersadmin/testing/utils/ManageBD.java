@@ -10,6 +10,9 @@ public class ManageBD {
     private static String pass = "p4ssw0rd";
     private static Connection connection;
 
+    /**
+     * Método encargado de abrir la conexión con la base dew datos
+     */
     public static void initConnection() {
        try {
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/appgate", user, pass);
@@ -19,6 +22,9 @@ public class ManageBD {
         }
     }
 
+    /**
+     * Método encargado de cerrar la conexión con la base dew datos
+     */
     public static void closeConnection(){
         try {
             connection.close();
@@ -27,6 +33,13 @@ public class ManageBD {
         }
     }
 
+    /**
+     * Metodo encargado de insertar usuarios en la base de datos
+     * @param idEmpleado
+     * @param nombre
+     * @param meses
+     * @param salario
+     */
     public static void insertEmployee(int idEmpleado, String nombre, int meses, int salario) throws SQLException {
         try{
             PreparedStatement stmn = connection.prepareStatement("insert into empleados (idempleado,nombre,meses,salario) values (?,?,?,?)");
@@ -42,6 +55,11 @@ public class ManageBD {
         }
     }
 
+    /**
+     * Metodo encargado de consultar usuarios en la base de datos
+     * @param meses
+     * @param salario
+     */
     public static void getEmployee(int meses, int salario) {
 
         try {
