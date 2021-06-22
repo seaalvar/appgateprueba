@@ -25,16 +25,16 @@ pipeline{
                 deleteDir() /* clean up our workspace */
             }
             success {
-                echo 'I succeeded!'
+                echo 'Succeeded!'
             }
             unstable {
-                echo 'I am unstable :/'
+                echo 'The Pipeline is unstable'
             }
             failure {
-                echo 'I failed :('
+                echo 'The Pipeline failed'
             }
             changed {
-                echo 'Things were different before...'
+                echo 'The Pipeline changed'
             }
         }
 }
