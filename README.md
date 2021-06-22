@@ -71,5 +71,5 @@ Luego de finalizada la ejecución del proyecto se va a la raiz de proyecto y se 
 ---
 + El proyecto se encuentra alojando en un repositorio Github "https://github.com/seaalvar/appgateprueba"
 + Se creó un servidor Jenkins (local) en donde se creó una tarea llamada appgateprueba en la que se puede ejecutar el proyecto de forma automática.
-+ También se creó un pipeline el cual se conecta al archivo Jenkinsfile del proyecto en donde se administra el entorno de integración continua
++ También se creó un pipeline el cual se conecta al archivo Jenkinsfile del proyecto (\src\main\resources\Jenkinsfile) en donde se administra el entorno de integración continua
 + Se configuró el servidor jenkins para que se ejecute automáticamente una vez se realice cualquier cambio dentro del repositorio de código.
